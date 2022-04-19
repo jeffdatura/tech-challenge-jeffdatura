@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Proprio{% endblock %}
+
+{% block body %}
+    <h1>Create new Proprio</h1>
+
+    {{ include('proprio/_form.html.twig') }}
+
+    <a href="{{ path('app_proprio_index') }}">back to list</a>
+{% endblock %}

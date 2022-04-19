@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Chenille{% endblock %}
+
+{% block body %}
+    <h1>Create new Chenille</h1>
+
+    {{ include('chenille/_form.html.twig') }}
+
+    <a href="{{ path('app_chenille_index') }}">back to list</a>
+{% endblock %}

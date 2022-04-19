@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Chenille{% endblock %}
+
+{% block body %}
+    <h1>Chenille</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ chenille.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ chenille.nom }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_chenille_index') }}">back to list</a>
+
+    <a href="{{ path('app_chenille_edit', {'id': chenille.id}) }}">edit</a>
+
+    {{ include('chenille/_delete_form.html.twig') }}
+{% endblock %}
